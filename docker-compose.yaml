@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+    # get_data_hadoop:
+    #     container_name: get_data
+    #     build:
+    #         context: ./test_db/change_spark/
+    #         dockerfile: Dockerfile
+    #     networks:
+    #         - docker-hadoop-spark_default
+
+    get_data_hadoop_gp:
+        container_name: get_data
+        build:
+            context: ./test_db/gp/
+            dockerfile: Dockerfile
+        networks:
+            - docker-hadoop-spark_default
+
+networks:
+  docker-hadoop-spark_default:
+    external: true

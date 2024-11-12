@@ -1,0 +1,7 @@
+URL: "db_master_1"
+PROPERTIES: {
+    "user": "default",
+    "password": "default",
+    "driver": "org.postgresql.Driver",
+    "port": "5432"
+}
